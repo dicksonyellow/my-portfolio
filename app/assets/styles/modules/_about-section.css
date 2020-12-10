@@ -1,0 +1,50 @@
+.about-section {
+    position: relative;
+    text-align: center;
+
+    .water-mark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+    }
+
+    &__my-skills {
+        position: relative;
+        margin-bottom: 20em;
+
+        .skills {
+            background: #fff;
+            padding: 2em 4em;
+            margin: 2em 0;
+            border: 1px solid rgba($liteAsh, .5);
+            box-shadow: 0 5px 10px rgba($liteAsh, .5);
+        }
+
+        img {
+            width: 40%;
+        }
+
+        .heading {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .text-body {
+            color: $darkAsh;
+            margin-top: -.75em;
+        }
+
+    }
+
+    aside {
+        padding: 2rem;
+        background: $mainYellow;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    
+}

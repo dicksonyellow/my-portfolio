@@ -1,0 +1,25 @@
+.hire-me {
+    text-align: center;
+
+    &__contacts {
+        background: rgba($mainYellow, .5);
+        padding: 2em;
+
+        p{
+            margin-top: -.5em;
+        }
+    }
+
+    &__resume {
+        padding: 2em;
+
+        button {
+            padding: 1em 2em;
+            background: $darkBluish;
+            color: #fff;
+            border: none;
+            border-radius: .25em;
+            box-shadow: 0 5px 10px rgba($liteAsh, .5);
+        }
+    }
+}

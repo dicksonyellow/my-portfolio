@@ -1,0 +1,18 @@
+.site-footer {
+    background: #000;
+    text-align: center;
+
+    &__content {
+        padding: 2em;
+    }
+
+    &__design {
+        display: none;
+    }
+
+    a {
+        display: block;
+        color: $mainYellow;
+        padding: .5rem;
+    }
+}

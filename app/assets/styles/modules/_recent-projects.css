@@ -1,0 +1,15 @@
+.recent-projects {
+    color: #ffffff;
+    background: $darkAsh;
+    text-align: center;
+
+    &__project-item {
+        padding-bottom: 2em;
+
+        img {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+    }
+
+}

@@ -1,0 +1,29 @@
+.hero {
+    background: $darkAsh;
+    color: white;
+    text-align: center;
+
+    &__text {
+
+        .meet {
+            display: flex;
+            justify-content: center;
+            color: $mainBluish;
+            font-weight: 500;
+
+            span {
+                margin-top: 1em;
+                margin-right: .5em;
+            }
+        }
+
+        .scroll {
+            width: 30px;
+            margin-top: 2em;
+        }
+    }
+
+    &__design{
+        display: none;
+    }
+}
