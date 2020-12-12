@@ -14,8 +14,16 @@
     }
 
     &--project {
+        padding: 0 2.5em;
+
+        @mixin atMedium {
+            text-align: left;
+            align-self: center;
+            padding: 0 1em;
+        }
 
         h2 {
+            font-size: 1.25em;
             color: #ffffff;
         }
         

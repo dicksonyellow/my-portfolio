@@ -4,12 +4,25 @@
     text-align: center;
 
     &__project-item {
-        padding-bottom: 2em;
+        margin-bottom: 2em;
 
         img {
+            max-width: 90%;
             margin-top: 2em;
             margin-bottom: 2em;
+
+            @mixin atSmall {
+                max-width: 70%;
+            }
+
+            @mixin atMedium {
+                max-width: 100%;
+            }
+
+            @mixin atLarge {
+                max-width: 80%;
+                margin-bottom: 1em;
+            }
         }
     }
-
 }

@@ -4,6 +4,7 @@
 @import 'base/_global.css';
 @import 'modules/_wrapper';
 @import 'modules/_site-header';
+@import 'modules/_social-icons';
 @import 'modules/_hero';
 @import 'modules/_about-section';
 @import 'modules/_text-block';

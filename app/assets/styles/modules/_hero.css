@@ -2,8 +2,33 @@
     background: $darkAsh;
     color: white;
     text-align: center;
+    
+    @mixin atLarge {
+        background: unset;
+
+        .wrapper{
+            padding: 0;
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+    }
 
     &__text {
+        padding: 0 4em;
+
+        @mixin atLarge {
+            background: $darkAsh;
+            padding: 6em 4em;
+            text-align: left;
+
+            h1 {
+                font-size: 3.5rem;
+                line-height: 4rem;
+            }
+        }
 
         .meet {
             display: flex;
@@ -11,12 +36,17 @@
             color: $mainBluish;
             font-weight: 500;
 
+            @mixin atLarge {
+                justify-content: start;
+            }
+
+
             span {
                 margin-top: 1em;
                 margin-right: .5em;
             }
         }
-
+        
         .scroll {
             width: 30px;
             margin-top: 2em;
@@ -25,5 +55,11 @@
 
     &__design{
         display: none;
+
+        @mixin atLarge {
+            display: block;
+            width: 100%;
+            margin-left: -50%;
+        }
     }
 }

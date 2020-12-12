@@ -1,4 +1,13 @@
 .site-header {
+    background: #000000;
+    max-width: 1920px;
+    margin: 0 auto;
+    
+    @mixin atLarge {
+        background: unset;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
 
     &__content {
         background: #000000;
@@ -6,18 +15,30 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        
         img {
             width: 80%;
         }
 
         a {
             font-weight: 500;
+            padding: 0;
+        }
+
+        @mixin atMedium {
+            padding: .75em 4em;
         }
     }
 
     &__social-icons {
         display: none;
+        align-self: center;
+        justify-self: end;
+
+        @mixin atLarge {
+            display: block;
+            padding: .75em 4em;
+        }
     }
 
 }

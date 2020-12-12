@@ -18,15 +18,10 @@ a {
     padding: 0 1em;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-}
-
 h1 {
-    line-height: 3rem;
+    line-height: 2.75rem;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 h2 {
