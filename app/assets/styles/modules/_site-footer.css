@@ -1,4 +1,6 @@
 .site-footer {
+    max-width: 1920px;
+    margin: 0 auto;
     background: #000;
     text-align: center;
 

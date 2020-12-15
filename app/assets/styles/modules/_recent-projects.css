@@ -1,5 +1,6 @@
 .recent-projects {
     max-width: 1920px;
+    margin: 0 auto;
     color: #ffffff;
     background: $darkAsh;
     text-align: center;
