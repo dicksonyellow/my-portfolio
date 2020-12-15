@@ -6,6 +6,10 @@
         @mixin atMedium {
             padding: 4em;
         }
+
+        @mixin atExLarge {
+            padding: 4em 7em;
+        }
     
     &__grid-2-1 {      
 
@@ -14,6 +18,7 @@
             grid-template-columns: 2fr 1fr;
             grid-column-gap: 4em;
         }
+
     }
 
     &__grid-1-1 {

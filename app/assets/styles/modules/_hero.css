@@ -30,6 +30,10 @@
             }
         }
 
+        @mixin atExLarge {
+            padding: 6em 7em;
+        }
+
         .meet {
             display: flex;
             justify-content: center;

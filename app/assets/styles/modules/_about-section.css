@@ -1,4 +1,6 @@
 .about-section {
+    max-width: 1920px;
+    margin: 0 auto;
     position: relative;
     text-align: center;
 
@@ -10,10 +12,17 @@
     }
 
     &__me {
-        margin-bottom: 35em;
+
+        @mixin atExSmall {
+            margin-bottom: 40em;
+        }
+
+        @mixin atMidSmall {
+            margin-bottom: 37.5em;
+        }
 
         @mixin atMedium {
-            margin-bottom: 29.5em;
+            margin-bottom: 30em;
         }
 
         @mixin atLarge {
@@ -95,6 +104,10 @@
             padding: 4em;
             text-align: right;
             align-self: end;
+        }
+
+        @mixin atExLarge {
+            margin-right: -7em;
         }
     }
 

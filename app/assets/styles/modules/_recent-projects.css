@@ -1,4 +1,5 @@
 .recent-projects {
+    max-width: 1920px;
     color: #ffffff;
     background: $darkAsh;
     text-align: center;
