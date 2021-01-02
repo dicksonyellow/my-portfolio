@@ -1,27 +1,36 @@
 .hire-me {
     max-width: 1920px;
     margin: 0 auto;
+    padding: 4em 0;
     text-align: center;
+    position: relative;
 
     &__contacts {
-        background: rgba($mainYellow, .5);
+        max-width: 100%;
+        background: rgba($mainYellow, .40);
         padding: 2em;
+        border-radius: .5em;
+        backdrop-filter: blur(70px);
+        border: solid 2px transparent;
+        background-clip: padding-box;
+        box-shadow: 0 0 15px rgba(#000, .15);
+        z-index: 1;
 
         p{
             margin-top: -.5em;
         }
     }
 
-    &__resume {
-        padding: 2em;
+    &__design {
+        display: none;
+        position: absolute;
+        top: 17.5%;
+        left: 0%;
+        height: 100%;
+        z-index: 1;
 
-        button {
-            padding: 1em 2em;
-            background: $darkBluish;
-            color: #fff;
-            border: none;
-            border-radius: .25em;
-            box-shadow: 0 5px 10px rgba($liteAsh, .5);
+        @mixin atLarge {
+            display: block;
         }
     }
 }

@@ -1,114 +1,117 @@
 .about-section {
-    max-width: 1920px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
 
-    .water-mark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 300px;
+  .water-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+  }
+
+  &__me {
+    @mixin atExSmall {
+      margin-bottom: 35em;
     }
 
-    &__me {
+    @mixin atMidSmall {
+      margin-bottom: 30em;
+    }
 
-        @mixin atExSmall {
-            margin-bottom: 40em;
+    @mixin atLarge {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  &__my-skills {
+    .skills {
+      width: 100%;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.5em 3em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border: 1px solid rgba($liteAsh, 0.5);
+      box-shadow: 0 5px 10px rgba($liteAsh, 0.5);
+
+      @mixin atMidSmall {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+      }
+      @mixin atMedium {
+        width: 100%;
+        margin: 1em 0;
+      }
+
+      &__icon {
+        height: 100px;
+        margin: 1em;
+        display: grid;
+        place-content: center;
+      }
+
+      &__desc {
+        .heading {
+          font-size: 1.25rem;
+          font-weight: 500;
         }
 
-        @mixin atMidSmall {
-            margin-bottom: 37.5em;
-        }
-
-        @mixin atMedium {
-            margin-bottom: 30em;
+        .text-body {
+          color: $darkAsh;
+          margin-top: -0.75em;
         }
 
         @mixin atLarge {
-            text-align: left;
-            margin-bottom: 0;
+          text-align: center;
         }
+      }
     }
 
-    &__my-skills {
-        .skills {
-            background: #fff;
-            padding: 1.5em 3em;
-            margin: 2em 0;
-            border: 1px solid rgba($liteAsh, .5);
-            box-shadow: 0 5px 10px rgba($liteAsh, .5);
+    @mixin atMedium {
+      display: grid;
+      grid-column-gap: 2em;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 
-            &__icon {
-                height: 100px;
-                margin: 1em;
-                display: grid;
-                place-content: center;
-            }
+  &__aside {
+    padding: 2em;
+    background: $mainYellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-            &__desc {
+    .values {
+      h3 {
+        margin: 2em auto;
+        text-transform: uppercase;
+      }
 
-                .heading {
-                    font-size: 1.25rem;
-                    font-weight: 500;
-                }
-
-                .text-body {
-                    color: $darkAsh;
-                    margin-top: -.75em;
-                }
-
-                @mixin atLarge {
-                    text-align: center;
-                }
-
-            }
-        }
-
-        @mixin atMedium {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap: 2em;
-        }
-
+      p {
+        margin-top: -0.75em;
+      }
     }
 
-    &__aside {
-        padding: 4em;
-        background: $mainYellow;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        .values {
-
-            h3 {
-                margin: 2em auto;
-                text-transform: uppercase;
-            }
-
-            p {
-                margin-top: -.75em;
-            }
-        }
-
-        @mixin atMedium {
-            padding: 4em 8em;
-        }
-
-        @mixin atLarge {
-            position: static;
-            min-height: 500px;
-            margin-right: -4em;
-            margin-bottom: -6em;
-            padding: 4em;
-            text-align: right;
-            align-self: end;
-        }
-
-        @mixin atExLarge {
-            margin-right: -7em;
-        }
+    @mixin atMedium {
+      padding: 4em 8em;
     }
 
+    @mixin atLarge {
+      position: static;
+      min-height: 500px;
+      margin-right: -4em;
+      margin-bottom: -4em;
+      padding: 4em;
+      text-align: right;
+      align-self: end;
+    }
+
+    @mixin atExLarge {
+      margin-right: -7em;
+    }
+  }
 }

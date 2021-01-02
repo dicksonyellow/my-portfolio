@@ -3,7 +3,7 @@ import debounce from 'lodash/debounce'
 
 class RevealOnScroll {
     constructor(els, thresholdPercent) {
-        this. thresholdPercent = thresholdPercent
+        this.thresholdPercent = thresholdPercent
         this.itemsToReveal = els
         this.browserHeight = window.innerHeight
         this.hideInitially()

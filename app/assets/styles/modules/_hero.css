@@ -1,69 +1,89 @@
 .hero {
-    background: $darkAsh;
-    color: white;
-    text-align: center;
-    
+  background: $darkAsh;
+  color: white;
+  text-align: center;
+  padding: 3em 0;
+
+  @mixin atLarge {
+    background: unset;
+    padding: unset;
+
+    .wrapper {
+      padding: 0;
+    }
+  }
+
+  &__text {
+    padding: 0 4em;
+
     @mixin atLarge {
-        background: unset;
+      background: $darkAsh;
+      padding: 6em 4em;
+      text-align: left;
 
-        .wrapper{
-            padding: 0;
-        }
-
-        &__content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-        }
+      h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+      }
     }
 
-    &__text {
-        padding: 0 4em;
-
-        @mixin atLarge {
-            background: $darkAsh;
-            padding: 6em 4em;
-            text-align: left;
-
-            h1 {
-                font-size: 3.5rem;
-                line-height: 4rem;
-            }
-        }
-
-        @mixin atExLarge {
-            padding: 6em 7em;
-        }
-
-        .meet {
-            display: flex;
-            justify-content: center;
-            color: $mainBluish;
-            font-weight: 500;
-
-            @mixin atLarge {
-                justify-content: start;
-            }
-
-
-            span {
-                margin-top: 1em;
-                margin-right: .5em;
-            }
-        }
-        
-        .scroll {
-            width: 30px;
-            margin-top: 2em;
-        }
+    @mixin atExLarge {
+      padding: 6em 7em;
     }
 
-    &__design{
-        display: none;
+    .meet {
+      display: flex;
+      justify-content: center;
+      color: rgb(206, 206, 206);
+      font-weight: 500;
 
-        @mixin atLarge {
-            display: block;
-            width: 100%;
-            margin-left: -50%;
-        }
+      @mixin atLarge {
+        justify-content: start;
+      }
+
+      span {
+        margin-top: 1em;
+        margin-right: 0.5em;
+      }
     }
+
+    .scroll {
+      width: 30px;
+      margin-top: 2em;
+    }
+  }
+
+  .btn {
+    width: 220px;
+    margin: 0 auto;
+    padding: 0.75em 1em;
+    margin-top: 2em;
+    background: $darkBluish;
+    color: #fff;
+    border: none;
+    border-radius: 0.25em;
+    box-shadow: 0 0 5px rgba(#fff, 0.25);
+    cursor: pointer;
+    text-align: center;
+
+    @mixin atLarge {
+      margin: unset;
+      margin-top: 2em;
+    }
+  }
+
+  .btn:hover {
+    background: #008e8b;
+    transition: 0.75s ease-out;
+  }
+
+  &__design {
+    display: none;
+
+    @mixin atLarge {
+      display: block;
+      width: 100%;
+      margin-left: -50%;
+    }
+  }
 }

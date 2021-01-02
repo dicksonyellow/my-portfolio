@@ -1,53 +1,53 @@
 .site-header {
-    max-width: 1920px;
+  max-width: 1920px;
+  background: #000000;
+  margin: 0 auto;
+
+  @mixin atLarge {
+    background: unset;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &__content {
     background: #000000;
-    margin: 0 auto;
-    
+    padding: 0.75em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      font-weight: 500;
+      padding: 0;
+      font-size: 1em;
+    }
+
+    @mixin atMedium {
+      padding: 0.75em 4em;
+    }
+
+    @mixin atExLarge {
+      padding: 0.75em 7em;
+    }
+  }
+
+  &__logo {
+    width: auto;
+    height: auto;
+  }
+
+  &__social-icons {
+    display: none;
+    align-self: center;
+    justify-self: end;
+
     @mixin atLarge {
-        background: unset;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+      display: block;
+      padding: 0.75em 4em;
     }
 
-    &__content {
-        background: #000000;
-        padding: .75em 2em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        a {
-            font-weight: 500;
-            padding: 0;
-        }
-
-        @mixin atMedium {
-            padding: .75em 4em;
-        }
-
-        @mixin atExLarge {
-            padding: .75em 7em;
-        }
+    @mixin atExLarge {
+      padding: 0.75em 7em;
     }
-
-    &__logo {
-        width: auto;
-        height: auto;
-    }
-
-    &__social-icons {
-        display: none;
-        align-self: center;
-        justify-self: end;
-
-        @mixin atLarge {
-            display: block;
-            padding: .75em 4em;
-        }
-
-        @mixin atExLarge {
-            padding: .75em 7em;
-        }
-    }
-
+  }
 }
