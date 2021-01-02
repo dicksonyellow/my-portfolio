@@ -11,7 +11,7 @@
 
   &__content {
     background: #000000;
-    padding: 0.75em 2em;
+    padding: 1em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,12 +22,16 @@
       font-size: 1em;
     }
 
+    a:hover {
+      color: $mainYellow;
+    }
+
     @mixin atMedium {
-      padding: 0.75em 4em;
+      padding: 1em 4em;
     }
 
     @mixin atExLarge {
-      padding: 0.75em 7em;
+      padding: 1em 7em;
     }
   }
 

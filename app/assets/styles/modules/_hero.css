@@ -14,7 +14,7 @@
   }
 
   &__text {
-    padding: 0 4em;
+    padding: 0 1em;
 
     @mixin atLarge {
       background: $darkAsh;
@@ -34,8 +34,13 @@
     .meet {
       display: flex;
       justify-content: center;
-      color: rgb(206, 206, 206);
+      color: #dedede;
       font-weight: 500;
+      font-size: 1em;
+
+      @mixin atMedium {
+        font-size: 1.25em;
+      }
 
       @mixin atLarge {
         justify-content: start;
