@@ -15,6 +15,9 @@
 
   &__text {
     padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @mixin atLarge {
       background: $darkAsh;
@@ -22,6 +25,7 @@
       text-align: left;
 
       h1 {
+        width: 80%;
         font-size: 3.5rem;
         line-height: 4rem;
       }

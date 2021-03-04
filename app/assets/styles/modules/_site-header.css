@@ -16,10 +16,11 @@
     justify-content: space-between;
     align-items: center;
 
-    a {
+    nav a {
       font-weight: 500;
       padding: 0;
       font-size: 1em;
+      padding: 0 0 0 2em;
     }
 
     a:hover {
@@ -35,9 +36,10 @@
     }
   }
 
-  &__logo {
+  .site-logo {
     width: auto;
     height: auto;
+    padding: 0;
   }
 
   &__social-icons {
