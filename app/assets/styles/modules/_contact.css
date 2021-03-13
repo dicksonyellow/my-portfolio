@@ -27,22 +27,8 @@
 
   &__info {
     width: 100%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-
-    gap: 1em;
-    grid-auto-flow: row;
-
-    @mixin atMedium {
-      grid-auto-flow: column;
-      grid-template-columns: 1fr 1fr;
-    }
 
     .c-info {
-      display: grid;
-      justify-content: center;
-      align-content: center;
       width: 100%;
       min-height: 300px;
       margin: 0.4em;

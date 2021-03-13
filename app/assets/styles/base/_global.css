@@ -41,3 +41,23 @@ p {
   line-height: 1.5rem;
   font-weight: 200;
 }
+
+.grid-center {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-2x {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  gap: 1em;
+  grid-auto-flow: row;
+
+  @mixin atMedium {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+  }
+}
